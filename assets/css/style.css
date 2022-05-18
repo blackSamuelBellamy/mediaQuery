@@ -204,6 +204,7 @@ footer {
        display: flex;
        align-items: center;
        justify-content: center;
+       grid-area: menu;
    }
 
    .button {
@@ -229,8 +230,26 @@ footer {
        cursor: pointer;
    }
 
+   .filter-search {
+       grid-area: search;
+   }
+
+   .main {
+       grid-area: main;
+   }
+
    .pagination {
        display: none;
+   }
+
+   .image {
+       width: 13em;
+       height: 20em;
+   }
+
+   footer {
+    grid-area: footer;
+    width: 21vw;
    }
 
   
