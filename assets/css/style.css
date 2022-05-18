@@ -16,7 +16,7 @@
 
 header {
     grid-area: menu;
-    background: blue;
+    background-image: radial-gradient(circle at 56.32% 56.32%, #a976fc 0, #815ce9 25%, #4d42d4 50%, #002bbf 75%, #001bad 100%);
     display: flex;
     align-items: center;
     height: 7vh;
@@ -199,10 +199,11 @@ footer {
        "menu main main main"
        "footer main main main"
        ;
+       height: 100vh;
    }
 
    header {
-       height: 100vh;
+       height: inherit;
        width: 21vw;
        display: flex;
        align-items: center;
@@ -217,8 +218,9 @@ footer {
    .menu {
        clip-path: none;
        position: relative;
+       top: -4%;
        width: 18vw;
-       height: 60vh;
+       height: 40vh;
        left: -2%;
        transition: none;
        box-shadow: 0px 0px 10px #FFF inset, 15px 25px 20px #FFF;
@@ -253,6 +255,8 @@ footer {
    footer {
     grid-area: footer;
     width: 21vw;
+    position: relative;
+    top: -100%;
    }
 
   
