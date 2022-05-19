@@ -178,13 +178,33 @@ button span {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: red;
     color: white;
     width: 100vw;
     height: 12vh;
+    
 }
+
+footer .icons i {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+footer p {
+    letter-spacing: 2px;
+}
+
+footer .icons i:hover {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #000;
+    transform: rotateZ(-15deg) scale(1.3);
+}
+
 
 
 
@@ -219,7 +239,7 @@ footer {
        clip-path: none;
        position: relative;
        top: -4%;
-       width: 18vw;
+       width: 19vw;
        height: 40vh;
        left: -2%;
        transition: none;
@@ -231,7 +251,7 @@ footer {
 
    .menu ul li {
        color: #FFF;
-       font-size: 1.4rem;
+       font-size: 150%;
        cursor: pointer;
    }
 
@@ -257,7 +277,26 @@ footer {
     width: 21vw;
     position: relative;
     top: -100%;
+    border-radius: 1px 15px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 19vh;
+    
    }
+
+   footer .icons {
+       display: flex;
+       flex-wrap: wrap;
+       font-size: .9em;
+       gap: 6px;
+       margin-bottom: 5%;
+   }
+
+   footer p {
+       text-align: center;
+       font-size: 1.11em;
+   }
+
 
   
 }
