@@ -257,6 +257,7 @@ footer .icons i:hover {
 
    .filter-search {
        grid-area: search;
+       width: 79vw;
    }
 
    .main {
