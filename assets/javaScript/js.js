@@ -13,4 +13,14 @@ const hamburger = document.querySelector('.hamburger');
         hamburger.classList.toggle('color');
     });
 
+//
+const hidden = document.querySelector('.select-list');
+const select = document.querySelector('.select');
+const moving = document.querySelector('.moving');
 
+select.addEventListener('click', () =>{
+    hidden.classList.toggle('hidden');
+    moving.classList.toggle('rotate');
+});
+
+//

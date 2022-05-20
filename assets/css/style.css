@@ -12,6 +12,7 @@
     "main"
     "main"
     "footer";
+    max-width: 100vw;
 }
 
 header {
@@ -19,17 +20,32 @@ header {
     background-image: radial-gradient(circle at 56.32% 56.32%, #a976fc 0, #815ce9 25%, #4d42d4 50%, #002bbf 75%, #001bad 100%);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 7vh;
 }
 
-button {
+.logo {
+    width: 100px;
+    height: 35px;
+    background-image: url(https://media.istockphoto.com/vectors/flying-plane-for-travel-logo-design-template-vector-id1182243050?b=1&k=20&m=1182243050&s=612x612&w=0&h=Oi1IgHCQk4GjFu-M-WevEJMgKfOECkQ8kFcpG25H0r0=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -3%;
+    border-radius: 0px 50px;
+    margin-left: 5%;
+
+} 
+
+
+
+.hamburger {
     cursor: pointer;
-    height: 45px;
+    height: 40px;
     width: 45px;
     background-color: #FFF;
     border: none;
     transition: 1s;
-    margin-left: 5px;
+    margin-right: 25px;
 }
 
 button span {
@@ -53,15 +69,18 @@ button span {
 }
 
 .up {
-    transform: rotate(-45deg) translateY(5px) translateX(-6px);
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
     display: block;
     background-color: #FFF;
+    width: 2.7em;
+    
 }
 
 .down {
-    transform: rotate(45deg) translateY(-9px) translateX(-8px);
+    transform: rotate(45deg) translateY(-8px) translateX(-8px);
     display: block;
     background-color: #FFF;
+
     
 }
 
@@ -110,8 +129,74 @@ button span {
     width: 100vw;
     background-color: yellow;
     height: 7vh;
-    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.box-select {
+    width: 350px;
+    
+}
+
+.select {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: rgba(225, 225, 225, .7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.select-list {
+    
+    background: rgba(225, 225, 225, .7);
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    
+}
+
+.hidden {
+    display: flex;
+    flex-direction: column;
+    top: 7em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17em;
+
+
+}
+
+.rotate {
+    transform: rotateZ(180deg);
+}
+
+
+.list-item {
+    width: 100%;
+    padding: 15px 0 15px 70px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+
+.list-item:hover {
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, .7) inset ;
+}
+
+.list-item img {
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 25px;
+}
+
 
 .main {
 
@@ -162,13 +247,15 @@ button span {
     margin-top: 2%;
     background-color: #4d42d4;
     width: 110px;
+    height: 55px;
     border-radius: 7px;
     color: #FFF;
     letter-spacing: 3px;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1em;
     text-align: center;
+    cursor: pointer;
     
 }
 
@@ -271,9 +358,20 @@ footer .icons i:hover {
        height: 100%;
        width: 21vw;
        display: flex;
+       flex-direction: column;
        align-items: center;
-       justify-content: center;
+       justify-content: space-around;
        grid-area: menu;
+       
+   }
+
+   .logo {
+    position: relative;
+    top: -10%;
+    width: 15vw;
+    height: 15vh;
+    border-radius: 50%;
+    
    }
 
    .button {
@@ -283,7 +381,7 @@ footer .icons i:hover {
    .menu {
        clip-path: none;
        position: relative;
-       top: -10%;
+       top: -30%;
        width: 19vw;
        height: 40vh;
        left: -2%;
@@ -333,6 +431,10 @@ footer .icons i:hover {
     }
    .image {
        width: 100%;
+   }
+
+   .image img {
+       border-radius: 7px;
    }
 
  
