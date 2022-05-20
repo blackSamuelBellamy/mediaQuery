@@ -414,7 +414,7 @@ footer .icons i:hover {
 
    .hidden {
        left: 62%;
-       top: 16%;
+       top: 23%;
    }
 
    .main {
@@ -485,4 +485,12 @@ footer .icons i:hover {
 
 
   
+} 
+
+@media(min-width: 825px) and (max-width: 1099px) {
+    
+    .helsinki {
+        margin-top: 20%;
+    }
 }
+
