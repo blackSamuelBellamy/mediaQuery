@@ -93,7 +93,7 @@ button span {
     border-radius: 10px 50px 10px 50px;
     position: fixed;
     z-index: 300;
-    top: 130px;
+    top: 20%;
     left: 7%;
     box-shadow: 3px 15px 35px #000 inset;
 }
@@ -166,8 +166,8 @@ button span {
 .hidden {
     display: flex;
     flex-direction: column;
-    top: 9em;
     position: absolute;
+    top: 24%;
     left: 50%;
     transform: translateX(-50%);
     width: 17em;
@@ -232,7 +232,7 @@ button span {
 .image {
     width: 85vw;
     margin: 0 auto;
-    height: 50vh;
+    height: 45vh;
 }
 
 .image img {
@@ -252,7 +252,7 @@ button span {
     margin-top: 2%;
     background-color: #4d42d4;
     width: 110px;
-    height: 55px;
+    height: 48px;
     border-radius: 7px;
     color: #FFF;
     letter-spacing: 3px;
@@ -329,6 +329,7 @@ footer .icons i {
     margin: 0 5px;
     cursor: pointer;
     font-size: 1.3em;
+    transition: .9s;
 }
 
 footer p {
@@ -413,7 +414,7 @@ footer .icons i:hover {
 
    .hidden {
        left: 62%;
-       top: 13%;
+       top: 16%;
    }
 
    .main {
